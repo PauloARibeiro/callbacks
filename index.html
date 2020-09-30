@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./bulma.min.css" />
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title">Events</h1>
+                        <h6 class="subtitle is-6">
+                            Callbacks are everywhere, events such as click, keyup, keydown, focus,
+                            etc. All of these can take a callback function to "call back" when the
+                            events are trigered
+                        </h2>
+
+                        <hr />
+                        <div class="columns p-0">
+                            <!-- BUTTON CALLBACK -->
+
+                            <div class="column">
+                                <h4 class="title is-4">Button</h4>
+
+                                <button data-event="button" class="button is-light">
+                                    Click me!
+                                </button>
+
+                                <h6 data-event="button-text" class="subtitle is-6"></h6>
+                            </div>
+
+                            <!-- INPUT CALLBACK -->
+
+                            <div class="column">
+                                <h4 class="title is-4">Input</h4>
+
+                                <input
+                                    data-event="input"
+                                    class="input"
+                                    type="text"
+                                    placeholder="Text input"
+                                />
+
+                                <h6 data-event="input-text" class="subtitle is-6"></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h1 class="title">Timeout</h1>
+                        <h6 class="subtitle is-6">
+                            Timeouts also take a callback function to execute when the time has ran
+                            out
+                        </h2>
+
+                        <hr />
+                        <div class="columns p-0">
+                            <!-- BUTTON CALLBACK -->
+
+                            <div class="column">
+                                <button data-timeout="button" class="button is-light">
+                                    Click me!
+                                </button>
+
+                                <h6 data-timeout="button-text" class="subtitle is-6"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="title">Homework</h1>
+
+                       <ul>
+                         <li>List of cats</li>
+                         <li>Loop through list</li>
+                         <li>If cat name contains letter run the</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
